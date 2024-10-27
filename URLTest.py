@@ -4,10 +4,10 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 import socket
 
-# Load the trained model
+# Loading the trained model
 model = joblib.load("phishing_url_classifier.joblib")
 
-# Define feature columns for creating a DataFrame
+# Defining feature columns for creating a DataFrame
 feature_columns = [
     'length_url', 'length_hostname', 'ip', 'nb_dots', 'nb_hyphens',
     'nb_at', 'nb_qm', 'nb_and', 'nb_or', 'nb_eq',
@@ -36,7 +36,7 @@ feature_columns = [
 
 # Function to extract features from a URL (Placeholder)
 def extract_features_from_url(url):
-    features = [0] * 87  # Replace with actual feature extraction logic
+    features = [0] * 87 
     return pd.DataFrame([features], columns=feature_columns)
 
 # Function to check if a domain exists using DNS

@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for
-from ExtractText import extract_text_from_image, classify_text  # Import from ExtractText.ipynb
-from URLTest import predict_url  # Import from URLTest.py
+from ExtractText import extract_text_from_image, classify_text  # Importing from ExtractText.py
+from URLTest import predict_url  # Importing from URLTest.py
 import random
 from matplotlib.figure import Figure
 import io
